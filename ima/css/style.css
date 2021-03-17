@@ -1,0 +1,53 @@
+.heading6 {
+    position: relative;
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+}
+
+.button-17 {
+    position: relative;
+    display: inline-block;
+    padding: 0.4em 1.6em;
+    text-decoration: none;
+    user-select: none;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.content {
+    margin: 0;
+    font-size: 0.8em;
+    color: #333;
+}
+
+.left-line,
+.right-line {
+    position: absolute;
+    top: 50%;
+    width: 1px;
+    height: 140%;
+    background: #333;
+    transition: 0.3s;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.left-line {
+    left: 5%;
+}
+
+.right-line {
+    left: 95%;
+}
+
+.button-17:hover .left-line {
+    left: 0;
+    height: 100%;
+}
+
+.button-17:hover .right-line {
+    left: 100%;
+    height: 100%;
+}
